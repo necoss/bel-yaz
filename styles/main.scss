@@ -65,7 +65,7 @@ main {
   .scarina-section {
     margin: 0 auto;
     background: #f2f2f2;
-    border-radius: 20px;
+    border-radius: 70px;
     margin-top: calc(var(--index) * 23);
     max-width: calc(var(--index) * 180);
 
@@ -83,6 +83,7 @@ main {
         position: absolute;
         right: 0;
         top: 0;
+        width: calc(var(--index) * 55);
       }
 
       .scarina_description {
@@ -114,13 +115,15 @@ main {
     position: relative;
     margin: 0 auto;
     background: #f2f2f2;
-    border-radius: 20px;
+    border-radius: 70px;
     margin-top: calc(var(--index) * 23);
     max-width: calc(var(--index) * 180);
     padding: calc(var(--index) * 5) calc(var(--index) * 10);
+    min-height: calc(var(--index) * 100);
 
     .secperson-img{
-      border-radius: 20px;
+      border-radius: 30px;
+      width: calc(var(--index) * 39);
     }
 
     .secperson-title{
@@ -143,7 +146,7 @@ main {
       font-style: normal;
       font-weight: 500;
       line-height: 120.833%; /* 29px */
-      border-radius: 35px;
+      border-radius: 30px;
       background: #1e1e1e;
       width: calc(var(--index) * 50);
       padding: calc(var(--index) * 3);
@@ -162,7 +165,7 @@ main {
       font-style: normal;
       font-weight: 500;
       line-height: 120.833%; /* 29px */
-      border-radius: 35px;
+      border-radius: 30px;
       background: #1e1e1e;
       width: calc(var(--index) * 50);
       padding: calc(var(--index) * 3);
@@ -200,6 +203,7 @@ main {
       position: absolute;
       right: calc(var(--index) * 10);
       top: calc(var(--index) * 5);
+      width: calc(var(--index) * 52);
       // transform: translateX(-50%);
     }
 
