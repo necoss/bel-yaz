@@ -1,0 +1,269 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --index: 1vw + 1vh;
+}
+
+.container {
+  padding: 0 calc(var(--index) * 15);
+}
+
+@mixin flex-all-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@font-face {
+  font-family: "Lemumer";
+  src: url(../font/Le_Murmure-Regular_web.ttf);
+}
+
+@font-face {
+  font-family: "Neue";
+  src: url(../font/TTFirsNeue-Regular.ttf);
+}
+
+
+body {
+  color: #1e1e1e;
+}
+
+main {
+  background: #1e1e1e;
+
+  .title_text {
+    font-family: "Lemumer";
+  }
+
+  .hero-section {
+    @include flex-all-center();
+    min-height: 100vh;
+    flex-direction: column;
+    background-image: url(../img/bg-hero.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    user-select: none;
+    border-radius: 0 0 75px 75px;
+
+    .hero-title {
+      font-size: calc(var(--index) * 19.2);
+      margin-bottom: calc(var(--index) * -15);
+      color: #8c1b24;
+    }
+
+    .hero-subtitle {
+      font-size: calc(var(--index) * 50);
+      color: #0339a6;
+    }
+  }
+
+  .scarina-section {
+    margin: 0 auto;
+    background: #f2f2f2;
+    border-radius: 20px;
+    margin-top: calc(var(--index) * 23);
+    max-width: calc(var(--index) * 180);
+
+    padding: calc(var(--index) * 5) calc(var(--index) * 10);
+
+    .scarina-content {
+      position: relative;
+
+      .scarina_name {
+        color: #032ca6;
+        font-size: calc(var(--index) * 30);
+      }
+
+      .scarina_img {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+
+      .scarina_description {
+        color: #fff;
+        font-family: "Neue";
+        font-size: calc(var(--index) * 1);
+        font-style: normal;
+        font-weight: 500;
+        line-height: 120.833%; /* 29px */
+        border-radius: 35px;
+        background: #1e1e1e;
+
+        width: calc(var(--index) * 80);
+        padding: calc(var(--index) * 5);
+        margin-top: calc(var(--index) * 3);
+      }
+
+      .scarina_surname {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        color: #8c1b24;
+        font-size: calc(var(--index) * 30);
+      }
+    }
+  }
+
+  .secperson-section{
+    position: relative;
+    margin: 0 auto;
+    background: #f2f2f2;
+    border-radius: 20px;
+    margin-top: calc(var(--index) * 23);
+    max-width: calc(var(--index) * 180);
+    padding: calc(var(--index) * 5) calc(var(--index) * 10);
+
+    .secperson-img{
+      border-radius: 20px;
+    }
+
+    .secperson-title{
+      position: absolute;
+      top: calc(var(--index) * .4);
+      right: calc(var(--index) * 10);
+      color: #8c1b24;
+      font-size: calc(var(--index) * 18);
+    }
+
+    .secperson-paragraph1{
+      position: absolute;
+      right: calc(var(--index) * 68);
+      top: calc(var(--index) * 28);
+      min-height: calc(var(--index) * 54);
+
+      color: #fff;
+      font-family: "Neue";
+      font-size: calc(var(--index) * 1);
+      font-style: normal;
+      font-weight: 500;
+      line-height: 120.833%; /* 29px */
+      border-radius: 35px;
+      background: #1e1e1e;
+      width: calc(var(--index) * 50);
+      padding: calc(var(--index) * 3);
+      margin-top: calc(var(--index) * 3);
+    }
+
+    .secperson-paragraph2{
+      position: absolute;
+      right: calc(var(--index) * 10);
+      top: calc(var(--index) * 28);
+      min-height: calc(var(--index) * 54);
+
+      color: #fff;
+      font-family: "Neue";
+      font-size: calc(var(--index) * 1);
+      font-style: normal;
+      font-weight: 500;
+      line-height: 120.833%; /* 29px */
+      border-radius: 35px;
+      background: #1e1e1e;
+      width: calc(var(--index) * 50);
+      padding: calc(var(--index) * 3);
+      margin-top: calc(var(--index) * 3);
+    }
+  }
+
+  .thirdperson-section{
+    position: relative;
+    margin: 0 auto;
+    background: #f2f2f2;
+    border-radius: 20px;
+    margin-top: calc(var(--index) * 23);
+    max-width: calc(var(--index) * 180);
+    min-height: calc(var(--index) * 100);
+    padding: calc(var(--index) * 15) calc(var(--index) * 10);
+    margin-bottom: calc(var(--index) * 20);
+
+    .thirdperson-title{
+      color: #032ca6;
+      font-size: calc(var(--index) * 35);
+      margin-top: calc(var(--index) * -10);
+    }
+
+    .thirdperson-subtitle{
+      position: absolute;
+      left: calc(var(--index) * 68);
+      bottom: calc(var(--index) * 0);
+      color: #032ca6;
+      font-size: calc(var(--index) * 30);
+    }
+
+    .thirdperson-img{
+      border-radius: 25px;
+      position: absolute;
+      right: calc(var(--index) * 10);
+      top: calc(var(--index) * 5);
+      // transform: translateX(-50%);
+    }
+
+    .thirdperson-paragraph1{
+      position: absolute;
+      left: calc(var(--index) * 70);
+      top: calc(var(--index) * 0);
+      min-height: calc(var(--index) * 54);
+
+      color: #fff;
+      font-family: "Neue";
+      font-size: calc(var(--index) * 1);
+      font-style: normal;
+      font-weight: 500;
+      line-height: 120.833%; /* 29px */
+      border-radius: 35px;
+      background: #1e1e1e;
+      width: calc(var(--index) * 40);
+      padding: calc(var(--index) * 3);
+      margin-top: calc(var(--index) * 3);
+    }
+
+    .thirdperson-paragraph2{
+      position: absolute;
+      left: calc(var(--index) * 10);
+      bottom: calc(var(--index) * 5);
+      min-height: calc(var(--index) * 54);
+
+      font-family: "Neue";
+      color: #fff;
+      font-size: calc(var(--index) * 1);
+      font-style: normal;
+      font-weight: 500;
+      line-height: 120.833%; /* 29px */
+      border-radius: 35px;
+      background: #1e1e1e;
+      width: calc(var(--index) * 50);
+
+      min-height: calc(var(--index) * 10);
+      padding: calc(var(--index) * 3);
+      margin-top: calc(var(--index) * 3);
+    }
+
+  }
+
+  .end-section{
+
+    background-image: url(../img/end.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    // max-width: calc(var(--index) * 180);
+    height: 100vh;
+    margin: 0 auto;
+    padding: calc(var(--index) * 10) calc(var(--index) * 15);
+
+    .end-text{
+      font-size: calc(var(--index) * 2);
+      margin-top: calc(var(--index) * 10);
+      font-weight: bold;
+      font-family: "Neue";
+
+      span{
+        color: #8c1b24;
+      }
+    }
+  }
+}
